@@ -137,21 +137,7 @@ style.innerHTML = `
 `;
 document.head.appendChild(style);
 
-// Music Toggle
-const music = document.getElementById('bg-music');
-const musicBtn = document.getElementById('music-toggle');
-let isPlaying = false;
 
-musicBtn.addEventListener('click', () => {
-    if (isPlaying) {
-        music.pause();
-        musicBtn.innerHTML = '♪';
-    } else {
-        music.play().catch(e => console.log("Music play blocked by browser. Need user interaction."));
-        musicBtn.innerHTML = '⏸';
-    }
-    isPlaying = !isPlaying;
-});
 
 // Expose nextSlide to global scope
 window.nextSlide = nextSlide;
