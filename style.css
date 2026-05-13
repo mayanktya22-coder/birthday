@@ -139,10 +139,11 @@ h1, h2 {
 
 /* Slide 1: Intro */
 #slide-1 {
-    background-image: url('assets/hero.png');
+    background-image: url('/assets/hero.png');
     background-size: cover;
     background-position: center;
 }
+
 
 .hero-overlay {
     position: absolute;
